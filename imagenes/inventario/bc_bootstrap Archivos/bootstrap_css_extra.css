@@ -1,0 +1,61 @@
+body{
+	background-image: url("../recursos/vectores/fondo2.png");
+	backgroud-size: cover;
+}
+
+.carousel-inner .carousel-item img {
+    height: auto;
+    max-height:225px;
+    width: auto;
+}
+
+/* clase para las imagenes de muestra */
+.thumbnail.imagenes_muestra > img{
+	width: auto;
+    max-height:225px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+/* contenedor de las imagenes de muestra */
+.container_2{
+    background-color: #EFE9F4;
+}
+
+.container_imagenes_muestra{
+	width:auto; 
+}
+
+/* posiciones y demas para las fotos */
+.container_imagenes_muestra .imagenes_muestra{
+	float: left;
+}
+
+.img {
+	max-width: 25px; 
+	height:auto; 
+	text-align:center; 
+	padding:20px; 
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+	.container_imagenes_muestra{
+		max-width:100%; 
+		height:auto; 
+		text-align:center; 
+		padding:20px; 
+	}
+	.img {
+		max-width: 25px; 
+		height:auto; 
+		text-align:center; 
+		padding:20px; 
+	}
+  }
+
+.container_imagenes_muestra .caption{
+	padding: 4px;
+}
+
