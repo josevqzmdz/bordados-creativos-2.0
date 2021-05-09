@@ -19,7 +19,7 @@ class UsersTablesSeeder extends Seeder
             "nombre" => "nombre 1",
             "ID" => str_random(10),
             "Posicion" => "Admin",
-            "Contraseña" => Hash::make("contraseña");
+            "Contraseña" => Hash::make("contraseña"),
 
             
         ]);
