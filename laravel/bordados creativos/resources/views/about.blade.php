@@ -196,7 +196,7 @@
                     <div class="col-md-12">
                         <ul class="lik">
                             <li > <a href="index">Inicio</a></li>
-                            <li class="active"> <a href="about">About</a></li>
+                            <li class="active"> <a href="about">Acerca de nosotros</a></li>
                             <li> <a href="trabajos">Trabajos</a></li>
                             <li> <a href="blog">blog</a></li>
                             <li> <a href="contact">Contactanos</a></li>

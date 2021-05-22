@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\userscontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+//Route::get('/', function () {
+//return view('index');
+//});
 
 Route::get('/index', function () {
     return view('index');
@@ -36,6 +37,15 @@ Route::get('/blog', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+
+// https://webmobtuts.com/backend-development/creating-a-shopping-cart-with-laravel/
+Route::get('/', 'App\Http\Controllers\ProductsController@index');
+Route::get('/cart', 'App\Http\Controllers\ProductsController@cart');
+Route::get('/add-to-cart/{id}', 'App\Http\Controllers\ProductsController@addToCart');
+
+Route::patch('update-cart', 'App\Http\Controllers\ProductsController@update');
+Route::delete('remove-from-cart', 'App\Http\Controllers\ProductsController@remove');
 
 Auth::routes();
 

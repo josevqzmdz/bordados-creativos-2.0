@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": " camisas",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "imagenes/inventario/camisas.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "chamarras",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "imagenes/inventario/chamarra.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "muñecos",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "imagenes/inventario/83691422_1243539832509261_6328477896537014272_o.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "gorras",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "imagenes/inventario/gorras.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "chalecos",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "imagenes/inventario/chaleco.jpeg" } } }
+      }
+    }
+  ]
+}

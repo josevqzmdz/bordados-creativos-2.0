@@ -26,6 +26,8 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+ 
+
 </head>
 <!-- body -->
 
@@ -85,7 +87,7 @@
                                 <li class="dinone">Contactanos <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">(833)1485828</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">Bordadoscreativostampico@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">Madero,</a></li>
-                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="">Registrate</a></li>
+                                <li class="button_user"><a class="button active" href="{{ route('login') }}">Login</a><a class="button" href="{{ route('register') }}">Registrate</a></li>
                                 <li><img style="margin-right: 15px;" src="images/search_icon.png" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">
@@ -110,23 +112,20 @@
                   </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                       
-                        <form class="main_form">
+                        <form class="main_form" method="post" action="sendmail">
                             <div class="row">
                              
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Nombre" type="text" name="Name">
+                                    <input class="form-control" placeholder="Titulo" type="text" name="Title">
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <input class="form-control" placeholder="Email" type="text" name="Email">
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Telefono" type="text" name="Phone">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <textarea class="textarea" placeholder="Mensaje" type="text" name="Message"></textarea>
                                 </div>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <button class="send">Enviar</button>
+                                    <button class="send" >Enviar</button>
                                 </div>
                             </div>
                         </form>
